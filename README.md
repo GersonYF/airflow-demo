@@ -22,14 +22,14 @@
                       |             |              |                 |
                       +-------------+              +-----------------+
 
-Webserver: UI for DAGs workspace, it's connected to PostgreSQL to store and retrieve metadata, interacting with the scheduler to run tasks.
-Scheduler: Decides when and where to execute the tasks based in the DAGs configuration. Interacts with the DB to keep the state of tasks and Redis to send the tasks to the workers.
-Worker: Executes the given tasks by the Redis broker.
-Triggerer: To monitor the tasks waiting for external events to complete.
-PostgreSQL: Database to store DAGs metadata, tasks configurations and execution states.
-Redis: Acts as a message broker between the scheduler and the workers.
-Flower: Tasks queues monitoring.
-airflow-init: It starts everything we need in order to function and get or UI running.
+**Webserver**: UI for DAGs workspace, it's connected to PostgreSQL to store and retrieve metadata, interacting with the scheduler to run tasks.
+**Scheduler**: Decides when and where to execute the tasks based in the DAGs configuration. Interacts with the DB to keep the state of tasks and Redis to send the tasks to the workers.
+**Worker**: Executes the given tasks by the Redis broker.
+**Triggerer**: To monitor the tasks waiting for external events to complete.
+**PostgreSQL**: Database to store DAGs metadata, tasks configurations and execution states.
+**Redis**: Acts as a message broker between the scheduler and the workers.
+**Flower**: Tasks queues monitoring.
+**airflow-init**: It starts everything we need in order to function and get our UI running.
 
 ## Up & running!
 Rename the ***_env_template*** to ***.env*** and update with your values.
