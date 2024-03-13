@@ -1,3 +1,101 @@
-# Environment
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
+# Airflow files
+airflow.cfg
+webserver_config.py
+airflow.db
+unittests.cfg
+dags/__pycache__/
+logs/
+plugins/__pycache__/
+
+# Docker
+*.log
+docker-compose*.yml
+.dockerignore
 .env
+.env.*
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Others
+*.csv
+*.dat
+*.out
+*.pid
+*.seed
+*.log
+*.sql
+*.tar.gz
+*.zip
+*.tar
+*.rar
+node_modules/
+jupyter_notebooks/
+*.sav
+*.pickle
+*.pkl
+
+# Exclude custom files that contain sensitive information
+# Replace these with your specific needs
+secrets/
+config/development/
+config/production/
+
+logs/
+
+*.py.log
+
+

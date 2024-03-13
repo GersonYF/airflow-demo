@@ -21,4 +21,4 @@ AIRFLOW__CORE__FERNET_KEY=your_fernet_key
 AIRFLOW__WEBSERVER__SECRET_KEY=your_secret_key
 
 # Additional PIP Requirements
-_PIP_ADDITIONAL_REQUIREMENTS=
+_PIP_ADDITIONAL_REQUIREMENTS="pandas numpy seaborn matplotlib"
