@@ -11,4 +11,4 @@ def anonymize_data(ti):
     df['Last Name'] = [anonymize(name) for name in df['Last Name']]
     df['Email'] = [anonymize(email) for email in df['Email']]
 
-    ti.xcom_push(key='anonymized_data', value=df)
+    return df

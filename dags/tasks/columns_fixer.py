@@ -11,6 +11,7 @@ def clean_column_names(columns) -> List[str]:
 
 
 def clean_columns(ti):
-    df = ti.xcom_pull(task_ids='anonymized_data')
+    df = ti.xcom_pull(task_ids='anonymize_data')
     df.columns = clean_column_names(df.columns)
-    ti.xcom_push(key='cleaned_columns', value=df)
+
+    return df
